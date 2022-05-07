@@ -17,20 +17,25 @@ yt-live-chat-ticker-renderer {
 }
 
 yt-live-chat-item-list-renderer {
-  --main-color: rgb(46, 196, 255);
-  
+  --main-color: rgb(0, 0, 0);
+  --owner-color: #FF5151;
+  --moderator-color: #FF5151;
+  --member-color: #CA8EFF;
+}
+
+yt-live-chat-item-list-renderer {
   --yt-live-chat-author-chip-owner-text-color: var(--main-color);
   --yt-live-chat-deleted-message-color: rgba(153, 153, 153, 0.5);
   --yt-live-chat-item-timestamp-display: none;
   --yt-live-chat-item-timestamp-margin: 0 5px 0 0;
   --yt-live-chat-message-highlight-background-color: transparent;
   --yt-live-chat-message-highlight-text-color: var(--main-color);
-  --yt-live-chat-moderator-color: #5e84f1ff;
-  --yt-live-chat-owner-color: var(--main-color);
+  --yt-live-chat-moderator-color: var(--moderator-color);
+  --yt-live-chat-owner-color: var(--owner-color);
   --yt-live-chat-paid-message-author-name-color: #ffffffff;
   --yt-live-chat-primary-text-color: #ffffffff;
   --yt-live-chat-secondary-text-color: #ffffffff;
-  --yt-live-chat-sponsor-color: var(--main-color);
+  --yt-live-chat-sponsor-color: var(--member-color);
   --yt-live-chat-tertiary-text-color: #999999ff;
 }
 
@@ -139,7 +144,7 @@ yt-live-chat-text-message-renderer yt-live-chat-author-chip::after {
 
 yt-live-chat-text-message-renderer[author-type="owner"]
   yt-live-chat-author-chip::after {
-  color: var(--yt-live-chat-message-highlight-text-color);
+  color: var(--yt-live-chat-owner-color);
   display: block;
 }
 
