@@ -17,7 +17,7 @@ yt-live-chat-ticker-renderer {
 }
 
 yt-live-chat-item-list-renderer {
-  --main-color: rgb(0, 0, 0);
+  --main-color: #5B5B5B;
   --owner-color: #FF5151;
   --moderator-color: #FF5151;
   --member-color: #CA8EFF;
